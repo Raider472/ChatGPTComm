@@ -139,3 +139,4 @@ Avec le code ci-dessus, comment j'affiche un texte pendant que la requête est e
 quel est ton modèle actuelle dans le format ci-dessous ?
 model: "text-davinci-003"
 donc je laisse model: "text-davinci-003" ?
+Coment je fais pour cacher ma clé d'api ?
