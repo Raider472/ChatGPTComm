@@ -140,3 +140,13 @@ quel est ton modèle actuelle dans le format ci-dessous ?
 model: "text-davinci-003"
 donc je laisse model: "text-davinci-003" ?
 Coment je fais pour cacher ma clé d'api ?
+comment j'utilise dotenv pour un .env ?
+j'ai une erreur de ce type :
+Uncaught ReferenceError: require is not defined
+    <anonymous> chatGPT.ts:2
+chatGPT.ts:2
+dans ce cas comment j'inclus dotenv dans un fichier typescript ?
+j'ai cette erreur
+Module "path" has been externalized for browser compatibility. Cannot access "path.resolve" in client code. See http://vitejs.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details. path:9:14
+Est-ce que je peux le faire avec vite à la place de dotenv ?
+Comment je fais pour que le chatbot garde le fil de la conversation ?
