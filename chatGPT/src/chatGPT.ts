@@ -14,7 +14,7 @@ export async function generateText(prompt: string): Promise<string> {
   const response = await openai.createCompletion({
     model: "text-davinci-003",
     prompt,
-    temperature: 1,
+    temperature: 0.6,
     max_tokens: 2048
   });
 
