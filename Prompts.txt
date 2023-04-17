@@ -150,3 +150,8 @@ j'ai cette erreur
 Module "path" has been externalized for browser compatibility. Cannot access "path.resolve" in client code. See http://vitejs.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details. path:9:14
 Est-ce que je peux le faire avec vite à la place de dotenv ?
 Comment je fais pour que le chatbot garde le fil de la conversation ?
+je voulais plutôt dire comment faire pour que le chatbot garde le contexte de la conversation ?
+la méthode create.conversation n'existe pas
+ok, la méthode a utiliser c'est openai.createChatCompletion
+j'ai trouvé comment faire, je stocke toutes les réponses dans le paramètre "prompt"
+Quelle est la taille maximum du paramètre prompt ?
