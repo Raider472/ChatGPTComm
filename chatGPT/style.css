@@ -1,0 +1,32 @@
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #343541;
+}
+
+#chat {
+    background-color: #444654;
+}
+
+.divArea {
+    width: 100%;
+}
+
+div #texte {
+    border-radius: .375rem;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+#texte {
+    max-height: 20px;
+    resize: none;
+    font-size: 20px;
+    overflow: auto;
+    background-color: #40414F;
+    color: #93939c;
+}

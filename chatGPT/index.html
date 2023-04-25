@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>ChatGPT</title>
   </head>
   <body>
     <script type="module" src="/src/event.ts"></script>
+    <h1>ChatGPT mais en mieux</h1>
     <div id="chat"></div>
-    <textarea id="texte"></textarea>
+    <div class="divArea">
+      <textarea id="texte" maxlength="750" placeholder="Ecriver votre prompt"></textarea>
+    </div>
     <button id="submit">Envoyer</button>
   </body>
 </html>
