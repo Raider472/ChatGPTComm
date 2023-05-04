@@ -1,47 +1,81 @@
 Est-il possible d’intégrer chatGPT sur une page HTML avec du javascript ? 
+
 Où et comment je créer un compte OpenAI ?
+
 Est t'il possible d'avoir une clé d'API gratuitement ?
+
 à la place de faire ça "<script src="https://cdn.jsdelivr.net/npm/@openai/chat-api@0.2.0/dist/web/chat.js"></script>", est ce que je ne pourrais pas installer un paquet npm ?
+
 npm install @openai/chat-api me donne une erreur
+
 sur la documentation officielle c'est "npm install openai"
+
 pourquoi voulez-tu que je tape "npm install @openai/chat-api"
+
 ok, j'ai installé le paquet, comment je l'inclus dans ma balise script ?
+
 je peux pas faire un "import" à la place de "<script src="node_modules/openai/dist/openai.js"></script>"
+
 dans le lien "src="node_modules/openai/dist/openai.js"", openai
+
 dans le lien "src="node_modules/openai/dist/openai.js"", openai.js n'existe pas dans le dossier
+
 je vais utiliser la méthode du lien dans la balise script, peux tu me confirmer que mettre le lien suivant est correct pour integrer chatGPT dans ma page html ?
+
 src="node_modules/openai/dist/index.js"
+
 Ok, je vais répéter ma requête. Comment j'inclus le paquet openAI dans ma page html avec la balise <script> ?
+
 quel est le model actuel de chatGPT ?
+
 à quoi correspond "el" dans la constante ?
+
 à quoi correspond "el" dans ce morceau de code ?
 const chat = new OpenAIChat({
     apiKey: 'votre-clé-d-api',
     model: 'davinci', // ou tout autre modèle ChatGPT que vous souhaitez utiliser
     el: document.querySelector('#chat')
 });
+
 j'ai suivi tes instructions et dans la console de ma page HTML, j'ai cette erreur : Uncaught ReferenceError: exports is not defined
     <anonymous> http://127.0.0.1:5500/node_modules/openai/dist/index.js:25
 index.js:25:1
+
 ok, recommençons depuis le début, comment j'importe le paquet openAI en typescript par exemple
+
 comment j'importe chatGPT ?
+
 le module OpenAIChat n'existe pas
+
 Est-ce que je peux utiliser OpenAIApi à la place ?
+
 Je vais utiliser le module OpenAIApi et non OpenAI
+
 stop, recommençons. Je veux intégrer dans un module typescript "OpenAIApi" pour implementer chatGPT dans ma page HTML
+
 npm install @openai/api n'existe pas, c'est npm install openai à la place
+
 c'est import import { OpenAIApi } from "openai"; à la place de { OpenAI } from '@openai/api';
+
 comment je fais maintenant ?
+
 const openai = new OpenAIApi('votre-clé-d-api'); ne marche pas, il me dit qu'un argument de type String n'est pas assignable à un argument de type "Configuration"
 
 
 Comment je peux intégrer chatGPT avec javascript/typescript ?
+
 j'ai une erreur me disant que la propriété completions n'existe pas
+
 même chose pour openai.complete
+
 même chose pour default
+
 même problème
+
 ou puis-je trouver la documentation pour ce que j'essaye de faire ?
+
 comment je fais en utilisant cette méthode : 
+
 import { Configuration, OpenAIApi } from "openai";
 
 const configuration = new Configuration({
@@ -83,8 +117,11 @@ async function generateText(prompt: string): Promise<string>
 // Exemple d'utilisation :
 const text = await generateText('Connais tu le jeu Stellaris ?');
 console.log(text); // Résultat : "Je vais bien, merci. Et vous ?"
+
 est-ce que je peux contrôler la taille de la réponse ?
+
 peux-tu me renseigner s'il existe d'autre paramètres pour contrôler mes requêtes ?
+
 ou puis-je trouver une documentation de ces paramètres ?
 
 comment je peux retourner un string avec cette fonction : 
@@ -136,22 +173,37 @@ j'ai trouver une solution:
   }
 
 Avec le code ci-dessus, comment j'affiche un texte pendant que la requête est en train d'être généré ? 
+
 quel est ton modèle actuelle dans le format ci-dessous ?
+
 model: "text-davinci-003"
+
 donc je laisse model: "text-davinci-003" ?
+
 Coment je fais pour cacher ma clé d'api ?
+
 comment j'utilise dotenv pour un .env ?
+
 j'ai une erreur de ce type :
 Uncaught ReferenceError: require is not defined
     <anonymous> chatGPT.ts:2
 chatGPT.ts:2
+
 dans ce cas comment j'inclus dotenv dans un fichier typescript ?
+
 j'ai cette erreur
 Module "path" has been externalized for browser compatibility. Cannot access "path.resolve" in client code. See http://vitejs.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details. path:9:14
+
 Est-ce que je peux le faire avec vite à la place de dotenv ?
+
 Comment je fais pour que le chatbot garde le fil de la conversation ?
+
 je voulais plutôt dire comment faire pour que le chatbot garde le contexte de la conversation ?
+
 la méthode create.conversation n'existe pas
+
 ok, la méthode a utiliser c'est openai.createChatCompletion
+
 j'ai trouvé comment faire, je stocke toutes les réponses dans le paramètre "prompt"
+
 Quelle est la taille maximum du paramètre prompt ?
